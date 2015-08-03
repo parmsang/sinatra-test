@@ -12,5 +12,5 @@ end
 
 get '/hello' do
   @visitor = params[:name]
-  erb :name
+  erb :index
 end
