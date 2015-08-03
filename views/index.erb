@@ -1,5 +1,9 @@
-get '/' do
-  "<div style='border: 3px dashed red'>
+<div style='border: 3px dashed red'>
+  <% if @visitor %>
+    Hello, <%= @visitor %>!
+  <% end %>
+  <% if @name %>
+    My name is <%= @name %>
+  <% end %>
   <img src='http://bit.ly/1eze8aE'>
-  </div>"
-end
+</div>
